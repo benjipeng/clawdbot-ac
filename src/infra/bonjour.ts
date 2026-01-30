@@ -4,6 +4,7 @@ import { ignoreCiaoCancellationRejection } from "./bonjour-ciao.js";
 import { formatBonjourError } from "./bonjour-errors.js";
 import { isTruthyEnvValue } from "./env.js";
 import { registerUnhandledRejectionHandler } from "./unhandled-rejections.js";
+import os from "node:os";
 
 export type GatewayBonjourAdvertiser = {
   stop: () => Promise<void>;
